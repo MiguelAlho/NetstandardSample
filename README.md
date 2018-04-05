@@ -13,11 +13,11 @@ The lib has methods that print out messages that can identify which compilation 
 
 ## Tested Runtimes
 
-There are apps that are compiled to specific targets - net35, net45, net461, netcore10 and netcore20. There is also an app that multitargets different runtimes.
+There are apps that are compiled to specific targets - net35, net45, net461, net462, net471, netcore10 and netcore20. There is also an app that multitargets different runtimes.
 
 ### Runing the project
 
-In Powershell from the root of the repo, run:
+Build in VS (no build script yet) and then in Powershell, from the root of the repo, run:
 
 ```
 .\run.ps1
