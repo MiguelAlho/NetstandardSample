@@ -39,9 +39,9 @@ netstandard lib not supported in Net35 apps
 cannot printRequest since the lis is not 3.5 compatible
 ```
 
-Ìn the net35 (old csproj) `MultitargetLib`'s `System.Console` ref was loaded from the installed framework folder (v2.0.50727); 
-`WriteACompilationSpecificMessage` writes "net35" so we can see that the `net35` compilation was loaded for the lib.
-The methods in `MultitargetLibWithDependencies` and `NetsatndardOnlyLib`could not be used as they are not net35 compatible.
+* In the net35 (old csproj) `MultitargetLib`'s `System.Console` ref was loaded from the installed framework folder (v2.0.50727); 
+* `WriteACompilationSpecificMessage` writes "net35" so we can see that the `net35` compilation was loaded for the lib.
+* The methods in `MultitargetLibWithDependencies` and `NetsatndardOnlyLib`could not be used as they are not net35 compatible.
 
 ```
 ---------------------------------------
@@ -58,10 +58,10 @@ Hello World from a Net45 App!
 WebRequest result is OK
 ```
 
-Ìn the net45 (old csproj) `MultitargetLib`'s `System.Console` ref was loaded from the installed framework folder (v4.0.30319); 
-`WriteACompilationSpecificMessage` writes "net45" so we can see that the `net45` compilation was loaded for the lib (as expected).
-`NetstandardOnlyLib` writes it's string soNet45 projects can load netstandard1.0 libs correctly.
-`MultitargetLibWithDependencies` can make the webrequest and uses the `net45` compilation.
+* In the net45 (old csproj) `MultitargetLib`'s `System.Console` ref was loaded from the installed framework folder (v4.0.30319); 
+* `WriteACompilationSpecificMessage` writes "net45" so we can see that the `net45` compilation was loaded for the lib (as expected).
+* `NetstandardOnlyLib` writes it's string soNet45 projects can load netstandard1.0 libs correctly.
+* `MultitargetLibWithDependencies` can make the webrequest and uses the `net45` compilation.
 
 ```
 ---------------------------------------
@@ -105,10 +105,10 @@ WebRequest result is OK
 
 ```
 
-Ìn the net461, net462 and net471 (old csproj) `MultitargetLib`'s `System.Console` ref was loaded from the installed framework folder (v4.0.30319); 
-`WriteACompilationSpecificMessage` writes "net45" so we can see that the `net45` compilation was loaded for the lib (as expected), which is a bit strange - while for `net45`that would seem to be "normal" for net461 and abouve I'd expect the netstandard since it is compatible. Instead, it opted for the compatible version from the installed FW.
-`NetstandardOnlyLib` writes it's string so `Net461` and abouve projects can load `netstandard1.0` libs correctly.
-`MultitargetLibWithDependencies` can make the webrequest and uses the `net45` compilation - since it loads `System.Net.Http` from the installed FW folder.
+* In the net461, net462 and net471 (old csproj) `MultitargetLib`'s `System.Console` ref was loaded from the installed framework folder (v4.0.30319); 
+* `WriteACompilationSpecificMessage` writes "net45" so we can see that the `net45` compilation was loaded for the lib (as expected), which is a bit strange - while for `net45`that would seem to be "normal" for net461 and abouve I'd expect the netstandard since it is compatible. Instead, it opted for the compatible version from the installed FW.
+* `NetstandardOnlyLib` writes it's string so `Net461` and abouve projects can load `netstandard1.0` libs correctly.
+* `MultitargetLibWithDependencies` can make the webrequest and uses the `net45` compilation - since it loads `System.Net.Http` from the installed FW folder.
 
 ```
 ---------------------------------------
@@ -126,10 +126,10 @@ WebRequest result is OK
 
 ```
 
-Ìn the netcore1.0 (sdk csproj) `MultitargetLib`'s `System.Console` ref was loaded, but the origin is unclear (most likely from the app bin foler) since the Location prop is not available in Assembly at the target;
-`WriteACompilationSpecificMessage` writes "netsatndard1_3" so we can see that the lowest compatible netstandard compilation was loaded for the lib.
-`NetstandardOnlyLib` writes it's string so `netcore` apps can load `netstandard1.0` libs correctly.
-`MultitargetLibWithDependencies` can make the webrequest and uses the `netstandard1.3` compilation from the `System.Net.Http` package.
+* In the netcore1.0 (sdk csproj) `MultitargetLib`'s `System.Console` ref was loaded, but the origin is unclear (most likely from the app bin foler) since the Location prop is not available in Assembly at the target;
+* `WriteACompilationSpecificMessage` writes "netsatndard1_3" so we can see that the lowest compatible netstandard compilation was loaded for the lib.
+* `NetstandardOnlyLib` writes it's string so `netcore` apps can load `netstandard1.0` libs correctly.
+* `MultitargetLibWithDependencies` can make the webrequest and uses the `netstandard1.3` compilation from the `System.Net.Http` package.
 
 ```
 ---------------------------------------
@@ -147,10 +147,10 @@ WebRequest result is OK
 
 ```
 
-Ìn the netcore2.0 (sdk csproj) `MultitargetLib`'s `System.Console` ref was loaded, but the origin is known in this case - i is from the latest sdk folder
-`WriteACompilationSpecificMessage` writes "netstandard 2.0" so we can see that the closest? compatible netstandard compilation was loaded for the lib. (the rule doesn't seem to be "lowest" since if it were, we should have gotten "netstandard 1.3")
-`NetstandardOnlyLib` writes it's string so `netcore` apps can load `netstandard1.0` libs correctly.
-`MultitargetLibWithDependencies` can make the webrequest and uses the latest compilation of `System.Net.Http` from the SDK folder (and NOT from the package!). I would have expected it to be from the package....
+* In the netcore2.0 (sdk csproj) `MultitargetLib`'s `System.Console` ref was loaded, but the origin is known in this case - i is from the latest sdk folder
+* `WriteACompilationSpecificMessage` writes "netstandard 2.0" so we can see that the closest? compatible netstandard compilation was loaded for the lib. (the rule doesn't seem to be "lowest" since if it were, we should have gotten "netstandard 1.3")
+* `NetstandardOnlyLib` writes it's string so `netcore` apps can load `netstandard1.0` libs correctly.
+* `MultitargetLibWithDependencies` can make the webrequest and uses the latest compilation of `System.Net.Http` from the SDK folder (and NOT from the package!). I would have expected it to be from the package....
 
 ```
 ---------------------------------------
@@ -200,6 +200,7 @@ WebRequest result is OK
 
 
 ```
+
 The first two targets of the multitarget app definiton (net35 and net45) have the same output as before.
 
 ```
@@ -246,6 +247,7 @@ Hello World from a Multitargeted App !
 WebRequest result is OK
 
 ```
+
 Things begin to difer here. We had to add the package ref conditionaly:
 
 ```
@@ -303,6 +305,6 @@ WebRequest result is OK
 
 
 ```
-the versions for netcore get recompiled and (probably) load the System.Console lib from the SDK folder.
-For `System.Net.Http` we have the same behaviour as in the previous run of the single target apps. On note - The AssemblyVersions are different. Bining redirects would need to be considered if multiple versions were used by other libraries... (this is where alot of the referencing get's complicated).
+* the versions for netcore get recompiled and (probably) load the `System.Console` lib from the SDK folder.
+* For `System.Net.Http` we have the same behaviour as in the previous run of the single target apps. On note - The `AssemblyVersion`s are different. Bining redirects would need to be considered if multiple versions were used by other libraries... (this is where alot of the referencing get's complicated).
 
