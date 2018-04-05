@@ -1,6 +1,10 @@
 ﻿using System;
 using MultitargetLib;
 
+#if !NET35
+using MultitargetLibWithDependencies;
+#endif
+
 namespace MultitargetApp
 {
     static class Program
@@ -27,9 +31,12 @@ namespace MultitargetApp
 
 #if NET35
             Console.WriteLine("netstandard lib not supported in Net35 apps");
+            Console.WriteLine("HttpClient dependent lib not supported in Net35 apps");
 #else
             Console.WriteLine(NetstandardOnlyLib.NetstandardClass.ReturnAMessageFromANetstandardOnlyLibrary());
+            Console.WriteLine($"WebRequest result is {PrintRequest.RequestSomething()}");
 #endif
+            
 
         }
     }

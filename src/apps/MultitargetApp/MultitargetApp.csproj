@@ -3,11 +3,26 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFrameworks>net35;net45;net461;netcoreapp1.0;netcoreapp2.0</TargetFrameworks>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\libs\MultitargetLib\MultitargetLib.csproj" />
     <ProjectReference Include="..\..\libs\NetstandardOnlyLib\NetstandardOnlyLib.csproj" Condition="$(TargetFramework) != 'net35'" />
+    <ProjectReference Include="..\..\lib\MultitargetLibWithDependencies\MultitargetLibWithDependencies.csproj" Condition="$(TargetFramework) != 'net35'" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="$(TargetFramework) == 'net461'">
+    <!-- For net461; by referencing System.Net.Http package, we force it's use in this target and bring along all it's dependencies
+      Something you can try, to verify problems with it:
+        remove the packages ref: your expectation is that it would come in with the referenced project but at runtime it fails by using
+        \src\apps\MultitargetApp\bin\Debug\net461\System.Net.Http.dll 
+        copied from package and not finding a dependent assembly:
+        System.IO.FileLoadException: Could not load file or assembly 'System.Diagnostics.DiagnosticSource, Version=4.0.0.0
+        
+      By refing the package (net461 only), it will have everything it needs, correctly 
+    -->
+    <PackageReference Include="System.Net.Http" Version="4.3.3" />
   </ItemGroup>
 
 </Project>

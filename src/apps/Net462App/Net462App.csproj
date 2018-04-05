@@ -57,6 +57,10 @@
       <Project>{825297F5-465D-4B8B-8508-7D9B28E02770}</Project>
       <Name>NetstandardOnlyLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\lib\MultitargetLibWithDependencies\MultitargetLibWithDependencies.csproj">
+      <Project>{5304801e-bc11-4b87-9c30-b6addb8a2b1b}</Project>
+      <Name>MultitargetLibWithDependencies</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,5 +8,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\libs\MultitargetLib\MultitargetLib.csproj" />
     <ProjectReference Include="..\..\libs\NetstandardOnlyLib\NetstandardOnlyLib.csproj" />
+    <ProjectReference Include="..\..\lib\MultitargetLibWithDependencies\MultitargetLibWithDependencies.csproj" />
   </ItemGroup>
 </Project>

@@ -11,8 +11,8 @@ namespace Net35App
 
             MultitargetedClass.WriteACommonMessage();
             MultitargetedClass.WriteACompilationSpecificMessage();
-            Console.WriteLine("netstandard lib not supported in Net35 apps");
-            //Console.WriteLine(NetstandardClass.ReturnAMessageFromANetstandardOnlyLibrary());
+            Console.WriteLine("netstandard lib not supported in Net35 apps"); //can't use NetstandardClass.ReturnAMessageFromANetstandardOnlyLibrary()
+            Console.WriteLine("cannot printRequest since the lis is not 3.5 compatible");
         }
     }
 }

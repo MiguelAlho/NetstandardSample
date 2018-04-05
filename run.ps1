@@ -34,9 +34,9 @@ WriteAppRunSplit
 WriteAppRunSplit
 .\src\apps\MultitargetApp\bin\Debug\net461\MultitargetApp.exe
 WriteAppRunSplit
-dotnet run --project .\src\apps\MultitargetApp\MultitargetApp.csproj --framework netcoreapp10
+dotnet run --project .\src\apps\MultitargetApp\MultitargetApp.csproj --framework netcoreapp1.0
 WriteAppRunSplit
-dotnet run --project .\src\apps\MultitargetApp\MultitargetApp.csproj --framework netcoreapp20
+dotnet run --project .\src\apps\MultitargetApp\MultitargetApp.csproj --framework netcoreapp2.0
 
 
 

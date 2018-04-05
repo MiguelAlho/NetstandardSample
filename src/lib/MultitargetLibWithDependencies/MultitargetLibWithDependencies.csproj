@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;netstandard1.6</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Here we are referencing System.Net.Http by package for non net45 (only supports netstandard1.1 or above -->
+    <PackageReference Include="System.Net.Http" Version="4.3.3" Condition="$(TargetFramework) != 'net45'" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- For net45 use the framework supplied package -->
+    <Reference Include="System.Net.Http" Condition="$(TargetFramework) == 'net45'" />
+  </ItemGroup>
+
+</Project>

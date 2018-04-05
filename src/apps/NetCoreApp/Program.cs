@@ -1,5 +1,6 @@
 ﻿using MultitargetLib;
 using System;
+using MultitargetLibWithDependencies;
 using NetstandardOnlyLib;
 
 namespace NetCoreApp
@@ -13,6 +14,7 @@ namespace NetCoreApp
             MultitargetedClass.WriteACommonMessage();
             MultitargetedClass.WriteACompilationSpecificMessage();
             Console.WriteLine(NetstandardClass.ReturnAMessageFromANetstandardOnlyLibrary());
+            Console.WriteLine($"WebRequest result is {PrintRequest.RequestSomething()}");
         }
     }
 }
