@@ -29,11 +29,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore20App", "src\apps\NetCoreApp\NetCore20App.csproj", "{E3257BC0-ABB4-4872-987E-88A9A2DF2021}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetstandardOnlyLib", "src\libs\NetstandardOnlyLib\NetstandardOnlyLib.csproj", "{825297F5-465D-4B8B-8508-7D9B28E02770}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetstandardOnlyLib", "src\libs\NetstandardOnlyLib\NetstandardOnlyLib.csproj", "{825297F5-465D-4B8B-8508-7D9B28E02770}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net35App", "src\apps\Net35App\Net35App.csproj", "{41069393-C6AA-4257-BF29-DE85BE39B1A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore10App", "src\apps\NetCore10App\NetCore10App.csproj", "{A61C4A30-8E59-4A63-ADCE-3E13A626DFB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore10App", "src\apps\NetCore10App\NetCore10App.csproj", "{A61C4A30-8E59-4A63-ADCE-3E13A626DFB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultitargetApp", "src\apps\MultitargetApp\MultitargetApp.csproj", "{50C30B4D-6897-4233-9CE6-A12521A77A0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +79,10 @@ Global
 		{A61C4A30-8E59-4A63-ADCE-3E13A626DFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A61C4A30-8E59-4A63-ADCE-3E13A626DFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A61C4A30-8E59-4A63-ADCE-3E13A626DFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50C30B4D-6897-4233-9CE6-A12521A77A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C30B4D-6897-4233-9CE6-A12521A77A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C30B4D-6897-4233-9CE6-A12521A77A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C30B4D-6897-4233-9CE6-A12521A77A0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +99,7 @@ Global
 		{825297F5-465D-4B8B-8508-7D9B28E02770} = {7CA9E3F6-FABE-46EE-A029-F159409718A5}
 		{41069393-C6AA-4257-BF29-DE85BE39B1A2} = {750DD2FE-E801-40B6-9672-483804ED141E}
 		{A61C4A30-8E59-4A63-ADCE-3E13A626DFB1} = {9DADCEA6-E49B-47B6-AFC2-B041275613ED}
+		{50C30B4D-6897-4233-9CE6-A12521A77A0E} = {9DADCEA6-E49B-47B6-AFC2-B041275613ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45425390-48F3-4D59-8817-B58B025B349D}
