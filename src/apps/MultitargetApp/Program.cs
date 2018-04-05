@@ -18,10 +18,14 @@ namespace MultitargetApp
             Console.WriteLine("Compiled for NetCore 2.0");
 #elif NET35                        
             Console.WriteLine("Compiled for Net35");
-#elif NET45                        
+#elif NET45
             Console.WriteLine("Compiled for Net45");
-#elif NET461                       
+#elif NET461
             Console.WriteLine("Compiled for Net461");
+#elif NET462
+            Console.WriteLine("Compiled for Net462");
+#elif NET471
+            Console.WriteLine("Compiled for Net471");
 #endif
 
             Console.WriteLine("Hello World from a Multitargeted App !");

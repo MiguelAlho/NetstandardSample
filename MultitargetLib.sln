@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultitargetLibWithDependenc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "multitarget_App", "multitarget_App", "{D8DCB2FF-738D-4323-82C5-B9406F659691}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net471App", "src\apps\Net471App\Net471App.csproj", "{1CCD77E3-9785-423B-8D02-59072FF2C4A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{5304801E-BC11-4B87-9C30-B6ADDB8A2B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5304801E-BC11-4B87-9C30-B6ADDB8A2B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5304801E-BC11-4B87-9C30-B6ADDB8A2B1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CCD77E3-9785-423B-8D02-59072FF2C4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CCD77E3-9785-423B-8D02-59072FF2C4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CCD77E3-9785-423B-8D02-59072FF2C4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CCD77E3-9785-423B-8D02-59072FF2C4A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -110,6 +116,7 @@ Global
 		{50C30B4D-6897-4233-9CE6-A12521A77A0E} = {D8DCB2FF-738D-4323-82C5-B9406F659691}
 		{5304801E-BC11-4B87-9C30-B6ADDB8A2B1B} = {7CA9E3F6-FABE-46EE-A029-F159409718A5}
 		{D8DCB2FF-738D-4323-82C5-B9406F659691} = {0A711A02-0867-4338-8784-521B695602F6}
+		{1CCD77E3-9785-423B-8D02-59072FF2C4A5} = {750DD2FE-E801-40B6-9672-483804ED141E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45425390-48F3-4D59-8817-B58B025B349D}
