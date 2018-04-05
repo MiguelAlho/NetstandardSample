@@ -1,14 +1,14 @@
-﻿using MultitargetLib;
-using System;
+﻿using System;
+using MultitargetLib;
 using NetstandardOnlyLib;
 
-namespace Net461App
+namespace NetCore10App
 {
     static class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World from a Net 461 App!");
+            Console.WriteLine("Hello World from a Net Core 1.0 App (SDK project)!");
 
             MultitargetedClass.WriteACommonMessage();
             MultitargetedClass.WriteACompilationSpecificMessage();

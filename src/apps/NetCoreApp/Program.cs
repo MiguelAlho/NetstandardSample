@@ -2,13 +2,13 @@
 using System;
 using NetstandardOnlyLib;
 
-namespace Net461App
+namespace NetCoreApp
 {
     static class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World from a Net 461 App!");
+            Console.WriteLine("Hello World from a Net Core 2.0 App (SDK project)!");
 
             MultitargetedClass.WriteACommonMessage();
             MultitargetedClass.WriteACompilationSpecificMessage();

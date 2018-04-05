@@ -4,13 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EBAD9A78-3B24-46FB-92E3-D1BBCEFE00BD}</ProjectGuid>
+    <ProjectGuid>{41069393-C6AA-4257-BF29-DE85BE39B1A2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Net461App</RootNamespace>
-    <AssemblyName>Net461App</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>Net35App</RootNamespace>
+    <AssemblyName>Net35App</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,9 +35,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -46,16 +43,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\libs\MultitargetLib\MultitargetLib.csproj">
-      <Project>{F605BFEF-B305-4510-874D-ED7BDBA700EB}</Project>
+      <Project>{f605bfef-b305-4510-874d-ed7bdba700eb}</Project>
       <Name>MultitargetLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\libs\NetstandardOnlyLib\NetstandardOnlyLib.csproj">
-      <Project>{825297f5-465d-4b8b-8508-7d9b28e02770}</Project>
-      <Name>NetstandardOnlyLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
