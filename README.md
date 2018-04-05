@@ -79,6 +79,19 @@ WebRequest result is OK
 
 ---------------------------------------
 
+Hello World from a Net 471 App!
+	I'm writing from WriteACommonMessage()
+	I'm writing from WriteACompilationSpecificMessage()
+		Console assembly name: System.Console, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+		Console assembly location: C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll
+		WriteACompilationSpecificMessage() for Net45
+	this is a Netstandard string.
+		Webrequest using C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Net.Http\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Net.Http.dll 
+		in System.Net.Http.HttpClient, System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a 
+WebRequest result is OK
+
+---------------------------------------
+
 Hello World from a Net Core 1.0 App (SDK project)!
 	I'm writing from WriteACommonMessage()
 	I'm writing from WriteACompilationSpecificMessage()
@@ -158,13 +171,39 @@ WebRequest result is OK
 
 ---------------------------------------
 
+Hello World from a Multitargeted App !
+	I'm writing from WriteACommonMessage()
+	I'm writing from WriteACompilationSpecificMessage()
+		Console assembly name: System.Console, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+		Console assembly location: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll
+		WriteACompilationSpecificMessage() for Net45
+	this is a Netstandard string.
+		Webrequest using C:\GH\NetstandardSample\src\apps\MultitargetApp\bin\Debug\net462\System.Net.Http.dll 
+		in System.Net.Http.HttpClient, System.Net.Http, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a 
+WebRequest result is OK
+
+---------------------------------------
+
+Hello World from a Multitargeted App !
+	I'm writing from WriteACommonMessage()
+	I'm writing from WriteACompilationSpecificMessage()
+		Console assembly name: System.Console, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+		Console assembly location: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll
+		WriteACompilationSpecificMessage() for Net45
+	this is a Netstandard string.
+		Webrequest using C:\GH\NetstandardSample\src\apps\MultitargetApp\bin\Debug\net471\System.Net.Http.dll 
+		in System.Net.Http.HttpClient, System.Net.Http, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a 
+WebRequest result is OK
+
+---------------------------------------
+
 Microsoft (R) Build Engine version 15.6.82.30579 for .NET Core
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-  Restore completed in 47.35 ms for C:\GH\NetstandardSample\src\libs\MultitargetLib\MultitargetLib.csproj.
-  Restore completed in 49.35 ms for C:\GH\NetstandardSample\src\lib\MultitargetLibWithDependencies\MultitargetLibWithDependencies.csproj.
-  Restore completed in 48.45 ms for C:\GH\NetstandardSample\src\libs\NetstandardOnlyLib\NetstandardOnlyLib.csproj.
-  Restore completed in 39.99 ms for C:\GH\NetstandardSample\src\apps\MultitargetApp\MultitargetApp.csproj.
+  Restore completed in 62.69 ms for C:\GH\NetstandardSample\src\lib\MultitargetLibWithDependencies\MultitargetLibWithDependencies.csproj.
+  Restore completed in 62.7 ms for C:\GH\NetstandardSample\src\libs\NetstandardOnlyLib\NetstandardOnlyLib.csproj.
+  Restore completed in 58.76 ms for C:\GH\NetstandardSample\src\libs\MultitargetLib\MultitargetLib.csproj.
+  Restore completed in 54.57 ms for C:\GH\NetstandardSample\src\apps\MultitargetApp\MultitargetApp.csproj.
 Compiled for NetCore 1.0
 Hello World from a Multitargeted App !
 	I'm writing from WriteACommonMessage()
@@ -182,10 +221,10 @@ WebRequest result is OK
 Microsoft (R) Build Engine version 15.6.82.30579 for .NET Core
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-  Restore completed in 47.92 ms for C:\GH\NetstandardSample\src\libs\MultitargetLib\MultitargetLib.csproj.
-  Restore completed in 50.47 ms for C:\GH\NetstandardSample\src\lib\MultitargetLibWithDependencies\MultitargetLibWithDependencies.csproj.
-  Restore completed in 50.28 ms for C:\GH\NetstandardSample\src\libs\NetstandardOnlyLib\NetstandardOnlyLib.csproj.
-  Restore completed in 40.38 ms for C:\GH\NetstandardSample\src\apps\MultitargetApp\MultitargetApp.csproj.
+  Restore completed in 50.68 ms for C:\GH\NetstandardSample\src\libs\NetstandardOnlyLib\NetstandardOnlyLib.csproj.
+  Restore completed in 50.97 ms for C:\GH\NetstandardSample\src\lib\MultitargetLibWithDependencies\MultitargetLibWithDependencies.csproj.
+  Restore completed in 48.74 ms for C:\GH\NetstandardSample\src\libs\MultitargetLib\MultitargetLib.csproj.
+  Restore completed in 36.01 ms for C:\GH\NetstandardSample\src\apps\MultitargetApp\MultitargetApp.csproj.
 Compiled for NetCore 2.0
 Hello World from a Multitargeted App !
 	I'm writing from WriteACommonMessage()
