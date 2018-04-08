@@ -308,3 +308,19 @@ WebRequest result is OK
 * the versions for netcore get recompiled and (probably) load the `System.Console` lib from the SDK folder.
 * For `System.Net.Http` we have the same behaviour as in the previous run of the single target apps. On note - The `AssemblyVersion`s are different. Bining redirects would need to be considered if multiple versions were used by other libraries... (this is where alot of the referencing get's complicated).
 
+## loading comparisons
+
+| target   | project | Console                                  | multitarg Lib   | System.Net.Http            | netstandard lib |
+|----------|---------|------------------------------------------|-----------------|----------------------------|-----------------|
+| net35    | fw      | mscorlib v2.0.0.0 (fw folder v2.0.50727) | net35           | -                          | no              |
+| net35    | sdk     | mscorlib v2.0.0.0 (fw folder v2.0.50727) | net35           | -                          | no              |
+| net45    | fw      | mscorlib v4.0.0.0 (fw folder v4.0.30319) | net45           | GAC v4.0.0.0               | yes             |
+| net45    | sdk     | mscorlib v4.0.0.0 (fw folder v4.0.30319) | net45           | GAC v4.0.0.0               | yes             |
+| net461   | fw      | mscorlib v4.0.0.0 (fw folder v4.0.30319) | net45           | GAC v4.0.0.0               | yes             |
+| net461   | sdk     | mscorlib v4.0.0.0 (fw folder v4.0.30319) | net45           | project                    | yes             |
+| net462   | fw      | mscorlib v4.0.0.0 (fw folder v4.0.30319) | net45           | GAC v4.0.0.0               | yes             |
+| net462   | sdk     | mscorlib v4.0.0.0 (fw folder v4.0.30319) | net45           | project                    | yes             |
+| net471   | fw      | mscorlib v4.0.0.0 (fw folder v4.0.30319) | net45           | GAC v4.0.0.0               | yes             |
+| net471   | sdk     | mscorlib v4.0.0.0 (fw folder v4.0.30319) | net45           | project                    | yes             |
+| netcore1 | sdk     | System.Console v4.0.0.0                  | netstandard 1.3 | package 4.3.3 (a v4.1.1.2) | yes             |
+| netcore2 | sdk     | SDK System.Console v4.1.0.0              | netstandard 2.0 | SDK (av4.2.0.0)            | yes             |
