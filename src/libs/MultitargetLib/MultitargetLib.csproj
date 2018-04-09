@@ -1,10 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <!-- we can multitarget a library using TargetFarmeworks (plural) element : -->
     <TargetFrameworks>net35;net45;netstandard1.3;netstandard2.0</TargetFrameworks>
   </PropertyGroup>
 
   <PropertyGroup>
+    <!-- we can specifiy package metadata to gen package on build -->
     <PackageName>Sample.MultitargetLib</PackageName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>

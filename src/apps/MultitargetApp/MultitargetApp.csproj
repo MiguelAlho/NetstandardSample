@@ -3,8 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFrameworks>net35;net45;net461;net462;net471;netcoreapp1.0;netcoreapp2.0</TargetFrameworks>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>    
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,7 +21,7 @@
         copied from package and not finding a dependent assembly:
         System.IO.FileLoadException: Could not load file or assembly 'System.Diagnostics.DiagnosticSource, Version=4.0.0.0
         
-      By ref-ing the package (net461 only), it will have everything it needs, correctly 
+      By ref-ing the package (net461, net462 and net471 only), it will have everything it needs, correctly 
     -->
     <PackageReference Include="System.Net.Http" Version="4.3.3" />
   </ItemGroup>
